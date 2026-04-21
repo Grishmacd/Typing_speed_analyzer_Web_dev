@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login-box">
+  <h2>🔐 Login</h2>
+
+  <input id="username" placeholder="Enter Username">
+  <input id="password" type="password" placeholder="Enter Password">
+
+  <div class="btn-row">
+    <button onclick="signup()">Signup</button>
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- APP (HIDDEN FIRST) -->
+<div id="app" style="display:none;">
+
+  <div class="container">
+    <h1>⌨️ <span>Typing Analyzer</span></h1>
+
+    <select id="level" onchange="changeLevel()">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <h3 id="progress">Paragraph 1 / 5</h3>
+
+    <div class="text" id="text"></div>
+
+    <textarea id="input" placeholder="Start typing..."></textarea>
+
+    <div class="stats">
+      <div class="box">⏱️ <span id="time">0</span>s</div>
+      <div class="box">⚡ <span id="speed">0</span> WPM</div>
+      <div class="box">🎯 <span id="accuracy">100</span>%</div>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="resetTest()">Reset</button>
+      <button onclick="stopTest()">Stop</button>
+      <button onclick="continueTest()">Continue</button>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="resultBox" class="result-box"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
