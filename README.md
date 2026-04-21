@@ -85,3 +85,31 @@ typing-analyzer/
   index.html
   style.css
   script.js
+```
+
+## Output
+
+- Real-time typing statistics  
+
+- Final result summary including:
+  - Total words typed  
+  - Time taken  
+  - WPM (speed)  
+  - Accuracy  
+
+- Performance feedback message  
+
+---
+
+## Future Improvements
+
+- Add leaderboard system  
+- Store user history and progress  
+- Add more dynamic paragraphs (API-based)  
+- Improve UI animations and themes  
+
+---
+
+## Developer
+
+**Grishma C.D**
